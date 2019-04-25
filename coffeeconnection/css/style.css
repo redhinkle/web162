@@ -1,0 +1,95 @@
+body{
+  font-size: 100%;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  background-color: rgb(234, 214, 159);
+}
+
+header{
+  background-color: rgb(33, 16, 11);
+}
+
+header h1{
+  font-family: 'Stalemate', sans-serif;
+  font-size: 5em;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #774422;
+  text-shadow: 2px 3px rgb(243, 255, 188);;
+}
+
+nav{
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  background-color: rgb(33, 16, 11);
+  line-height: 300%;
+}
+
+nav a{
+  color: rgb(243, 255, 188);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav p{
+  text-indent: 10px;
+  text-align: center;
+  word-spacing: 20px;
+}
+
+img{
+  height: auto;
+  width: 100%;
+}
+figure{
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(243, 255, 188);
+}
+
+#content{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(243, 255, 188);
+}
+
+h2{
+  font-family: 'Stalemate';
+  font-size: 3em;
+  text-align: center;
+}
+
+h3{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.product_center{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(234, 214, 159);
+}
+
+footer{
+  clear: left;
+  background-color: rgb(33, 16, 11);
+  color: rgb(243, 255, 188);
+  font-size: .75em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+  .product_center{
+    float:none;
+  }
+  foother{
+    clear: none;
+  }
+}

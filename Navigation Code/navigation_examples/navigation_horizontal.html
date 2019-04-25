@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sample Navigation</title>
+
+
+<style>
+
+ 
+ #navtop {/*border: 1px solid blue; */ overflow: auto;}    
+ 
+     
+
+ #navtop li  {border: 1px solid #000;
+               border-left: none;    /*prevents a double border */
+                width: 150px;
+                float: left;
+                text-align: center;
+                background-color: #ccc;}   
+ 
+ #navtop ul {list-style-type: none;
+              padding-left: 0px;
+              margin-top: 0px;
+              width: 780px;
+              margin-left: auto;
+              margin-right: auto;}
+              
+ #navtop a {padding: 10px; display: block;
+            text-decoration: none; color: #000; font-weight: bold;}          
+  
+      /* adds border to first button */           
+ #navtop ul li:first-of-type {border-left: 1px solid #000;} 
+    
+ 
+ #navtop a:hover {background-color: #fff; color: #888;}       
+ 
+
+  #navtop li:hover ul {display: block;}
+
+</style>
+</head>
+<body>
+<h1>Vertical Navigation</h1>
+<p>The trick is to float the "li" elements. Depending on the effect you want to achieve, you can also set the display property for the "li" elements to - inline.
+<br>
+<br>
+float works best if you want a button like style
+<br>
+display:inline works fine for just text links
+</p>
+
+<nav id="navtop">
+
+<ul>
+<li><a href="#">Home Page</a></li>
+
+<li><a href="#">Students</a></li>
+
+
+
+
+<li><a href="#">Faculty</a></li>
+
+<li><a href="#">Directions</a></li>
+
+
+
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+
+</body>
+</html>
+

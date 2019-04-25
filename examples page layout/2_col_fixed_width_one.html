@@ -1,0 +1,98 @@
+<!DO8CTYPE html>
+<!-- Changed the fixed widths, and set the right margin left property to  floats-->
+<html>
+<head>
+    <title>ch 16</title>
+
+  <style>
+
+    /* looks better for demo purposes */
+    h1, h2, p {margin: 0px;}
+
+
+
+    #wrapper { width: 100%;
+               border: 2px solid blue;
+               margin-left: auto;
+               margin-right: auto;
+              }
+
+    #header {
+              background-color: #ffc;
+              outline: 1px solid #000;
+            }
+    /* float here */
+    #left { width: 50%;
+            background-color: aqua;
+            outline: 1px solid navy;
+            float: left;
+
+        }
+
+     /* right margin here - no width */
+    #right {
+            float: left;
+            width: 50%;
+             outline: 1px solid brown;
+             background-color: yellow;
+    }
+
+
+
+    /* float cleared here */
+    #footer {
+              clear: left;
+              background-color: #ccc;
+            }
+            @media only screen and (max-width: 768px){
+                #left{
+                  float: none;
+                  width: 100%;
+                }
+                #right{
+                  float: none;
+                  width: 100%;
+            }
+
+  </style>
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <header id="header">
+        <h1>Header</h1>
+        <p>
+        2 columns fixed width container - one column has a fixed width - one float
+        </p>
+    </header>
+
+     <section id="left">
+        <h2>Left</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus scelerisque nunc, id molestie nisi. Fusce nec placerat nibh. Praesent quis urna at sem elementum posuere vitae at tortor. Nulla vitae odio nec velit blandit mollis. Pellentesque dapibus a sapien vel placerat. Vestibulum sapien neque, varius eu laoreet porttitor, ultricies eu nunc. Morbi placerat mi ut ligula fringilla tincidunt. Maecenas augue nulla, blandit at laoreet ac, dictum sit amet sem. In posuere pharetra ligula in accumsan. Maecenas semper egestas leo at ullamcorper. Quisque varius neque arcu, at semper erat aliquam id.
+        </p>
+     </section>
+
+      <section id="right">
+        <h2>Right</h2>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus scelerisque nunc, id molestie nisi. Fusce nec placerat nibh. Praesent quis urna at sem elementum posuere vitae at tortor. Nulla vitae odio nec velit blandit mollis. Pellentesque dapibus a sapien vel placerat. Vestibulum sapien neque, varius eu laoreet porttitor, ultricies eu nunc. Morbi placerat mi ut ligula fringilla tincidunt. Maecenas augue nulla, blandit at laoreet ac, dictum sit amet sem. In posuere pharetra ligula in accumsan. Maecenas semper egestas leo at ullamcorper. Quisque varius neque arcu, at semper erat aliquam id.
+         <br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus scelerisque nunc, id molestie nisi. Fusce nec placerat nibh. Praesent quis urna at sem elementum posuere vitae at tortor. Nulla vitae odio nec velit blandit mollis. Pellentesque dapibus a sapien vel placerat. Vestibulum sapien neque, varius eu laoreet porttitor, ultricies eu nunc. Morbi placerat mi ut ligula fringilla tincidunt. Maecenas augue nulla, blandit at laoreet ac, dictum sit amet sem. In posuere pharetra ligula in accumsan. Maecenas semper egestas leo at ullamcorper. Quisque varius neque arcu, at semper erat aliquam id.
+       </p>
+     </section>
+
+    <footer id="footer">
+        <h2>Footer Here</h2>
+    </footer>
+
+</div>
+
+
+
+</body>
+</html>

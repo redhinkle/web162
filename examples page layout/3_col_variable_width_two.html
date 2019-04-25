@@ -1,0 +1,109 @@
+<!DO8CTYPE html>
+
+<html>
+<head>
+    <title>ch 16</title>
+    
+  <style>
+    
+    /* looks better for demo purposes */
+    h1, h2, p {margin: 0px;}
+    
+   
+   
+    #wrapper { width: 80%;
+               border: 2px solid blue;
+               margin-left: auto;
+               margin-right: auto;
+              }
+              
+    #header { 
+              background-color: #ffc;
+              outline: 1px solid #000;
+            }
+            
+    /* float here */
+    #left { width: 200px;
+            background-color: aqua;
+            outline: 1px solid navy;
+            float: left;
+           
+        }
+        
+        
+    /* float here */
+    #middle { 
+            background-color: fuchsia;
+            outline: 1px solid red;
+            margin-right: 200px;
+            margin-left: 200px;
+            
+           
+        }        
+        
+     /* float here  has width*/   
+    #right { width: 200px;
+             float: right;
+             outline: 1px solid brown;
+             background-color: yellow;
+    }
+    
+    /* float cleared here */
+    #footer {
+              clear: both;
+              background-color: #ccc;
+            } 
+  </style>
+  
+  
+</head>
+
+<body>
+    
+    <div id="wrapper">
+        
+    <header id="header">
+        <h1>Header</h1>
+        <p>
+        3 columns variable width container - two columns have a fixed width -  2 floats (r/l) - middle column is last
+        <br>
+            middle column with change width with browser resize
+        </p>
+    </header>    
+        
+     <section id="left">
+        <h2>Left</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus scelerisque nunc, id molestie nisi. Fusce nec placerat nibh. Praesent quis urna at sem elementum posuere vitae at tortor. Nulla vitae odio nec velit blandit mollis. Pellentesque dapibus a sapien vel placerat. Vestibulum sapien neque, varius eu laoreet porttitor, ultricies eu nunc. Morbi placerat mi ut ligula fringilla tincidunt. Maecenas augue nulla, blandit at laoreet ac, dictum sit amet sem. In posuere pharetra ligula in accumsan. Maecenas semper egestas leo at ullamcorper. Quisque varius neque arcu, at semper erat aliquam id.    
+        </p>
+     </section>
+     
+      
+        
+      <section id="right">
+        <h2>Right</h2>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus scelerisque nunc, id molestie nisi. Fusce nec placerat nibh. Praesent quis urna at sem elementum posuere vitae at tortor. Nulla vitae odio nec velit blandit mollis. Pellentesque dapibus a sapien vel placerat. Vestibulum sapien neque, varius eu laoreet porttitor, ultricies eu nunc. Morbi placerat mi ut ligula fringilla tincidunt. Maecenas augue nulla, blandit at laoreet ac, dictum sit amet sem. In posuere pharetra ligula in accumsan. Maecenas semper egestas leo at ullamcorper. Quisque varius neque arcu, at semper erat aliquam id.
+         <br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus scelerisque nunc, id molestie nisi. Fusce nec placerat nibh. Praesent quis urna at sem elementum posuere vitae at tortor. Nulla vitae odio nec velit blandit mollis. Pellentesque dapibus a sapien vel placerat. Vestibulum sapien neque, varius eu laoreet porttitor, ultricies eu nunc. Morbi placerat mi ut ligula fringilla tincidunt. Maecenas augue nulla, blandit at laoreet ac, dictum sit amet sem. In posuere pharetra ligula in accumsan. Maecenas semper egestas leo at ullamcorper. Quisque varius neque arcu, at semper erat aliquam id.            
+       </p>
+     </section>
+      
+      
+   <section id="middle">
+        <h2>Middle</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis finibus scelerisque nunc, id molestie nisi. Fusce nec placerat nibh. Praesent quis urna at sem elementum posuere vitae at tortor. Nulla vitae odio nec velit blandit mollis. Pellentesque dapibus a sapien vel placerat. Vestibulum sapien neque, varius eu laoreet porttitor, ultricies eu nunc. Morbi placerat mi ut ligula fringilla tincidunt. Maecenas augue nulla, blandit at laoreet ac, dictum sit amet sem. In posuere pharetra ligula in accumsan. Maecenas semper egestas leo at ullamcorper. Quisque varius neque arcu, at semper erat aliquam id.    
+        </p>
+     </section>        
+      
+    <footer id="footer">
+        <h2>Footer Here</h2>
+    </footer>     
+        
+</div>
+
+
+
+</body>
+</html>

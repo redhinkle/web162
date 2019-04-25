@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sample Navigation</title>
+
+
+<style>
+
+ 
+ #navtop {/*border: 1px solid blue; use a border to see where it is*/ }    
+ 
+     
+
+ #navtop li  {border: 1px solid #000;
+               border-left: none;    /*prevents a double border */
+                width: 150px;
+                float: left;
+                text-align: center;
+                background-color: #ccc;}   
+ 
+ #navtop ul {list-style-type: none;
+              padding-left: 0px;
+              margin-top: 0px;
+              width: 780px;
+              margin-left: auto;
+              margin-right: auto;}
+              
+ #navtop a {padding: 10px; display: block;
+            text-decoration: none; color: #000; font-weight: bold;}          
+  
+      /* adds border to first button */           
+ #navtop ul li:first-of-type {border-left: 1px solid #000;} 
+    
+ 
+ #navtop a:hover {background-color: #fff; color: #888;}       
+ 
+ 
+ #navtop li ul li {float: none; border: 1px solid #000; position: relative;}
+ 
+  #navtop li ul {position: absolute; display: none;}
+  
+  #navtop li:hover ul {display: block;}
+
+</style>
+</head>
+<body>
+
+<h1>Vertical Navigation with a drop down menu - Students and Directions</h1>
+
+<p>this is accomplished by merely "nesting" another ul inside a li. The trick is to set the float to "none" for the drop down ul, otherwise it will inherit the float from the previous li styles. You also need to set a position of "relative" for the li which contains the nested list and a position of "absolute" for the nested list so that they line up, and so that the drop down is on top of the page. It is also a good idea to set the z-index on the nested ul so that it stays on top most layer.
+<br>
+<br>
+We also set the display property to "none" to hide the drop down menu, then change the disp[lay property to "block" to show it, when the cursor goes over the "li", using the :hover pseudoclass.
+</p>
+
+<nav id="navtop">
+
+<ul>
+<li><a href="#">Home Page</a></li>
+
+<li><a href="#">Students</a>
+
+			<ul>
+					<li><a href="#">New</a></li>
+					<li><a href="#">Present</a></li>
+					<li><a href="#">Future</a></li>
+					<li><a href="#">Alumni</a></li>
+			</ul>
+</li>
+
+
+
+
+<li><a href="#">Faculty</a></li>
+
+<li><a href="#">Directions</a>
+
+			<ul>
+					<li><a href="#">Mesa</a></li>
+					<li><a href="#">City</a></li>
+					<li><a href="#">Miramar</a></li>
+					<li><a href="#">Continuing Education</a></li>
+			</ul>
+
+</li>
+
+
+
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+
+</body>
+</html>
+
